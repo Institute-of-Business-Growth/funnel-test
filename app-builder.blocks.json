@@ -1,0 +1,86 @@
+{
+	"schemaVersion": 1,
+	"registryVersion": "dfy-website-vite8-2026-05-31",
+	"slots": {
+		"analytics": [
+			{
+				"blockType": "AnalyticsBridge",
+				"props": {
+					"enabledEvents": ["page_view", "lead_submitted", "checkout_started"],
+					"routePath": "/",
+					"funnelStepId": "dfy-home",
+					"funnelRevision": 1
+				}
+			}
+		],
+		"hero": [],
+		"content": [],
+		"pricing": [
+			{
+				"blockType": "OfferDisplayBlock",
+				"props": {
+					"offerId": "dfy-website-build",
+					"headline": "DFY Website Build",
+					"description": "A conversion-focused website funnel with offer positioning, lead capture, checkout wiring, and launch QA.",
+					"ctaText": "Start with a focused build sprint and a clear launch plan.",
+					"variant": "card",
+					"routePath": "/",
+					"funnelStepId": "dfy-checkout",
+					"funnelRevision": 1
+				}
+			},
+			{
+				"blockType": "CheckoutBlock",
+				"props": {
+					"offerId": "dfy-website-build",
+					"headline": "Start the DFY website build",
+					"description": "Reserve the build and move into asset collection, copy review, and launch scheduling.",
+					"buttonText": "Open checkout",
+					"variant": "card",
+					"successPath": "/thank-you",
+					"routePath": "/",
+					"funnelStepId": "dfy-checkout",
+					"funnelRevision": 1
+				}
+			}
+		],
+		"contact": [
+			{
+				"blockType": "LeadFormBlock",
+				"props": {
+					"formId": "dfy-website-application",
+					"title": "DFY website application",
+					"fields": [
+						"name",
+						"email",
+						"phone",
+						{
+							"id": "business-type",
+							"label": "Business type",
+							"type": "select",
+							"options": [
+								"Consulting",
+								"Agency",
+								"Coaching",
+								"Local service",
+								"Other"
+							]
+						},
+						{
+							"id": "project-notes",
+							"label": "What should this website help you sell?",
+							"type": "textarea"
+						}
+					],
+					"submitText": "Request build plan",
+					"successMessage": "Thanks. Your DFY website request was received.",
+					"routePath": "/",
+					"funnelStepId": "dfy-application",
+					"funnelRevision": 1
+				}
+			}
+		],
+		"footer": [],
+		"main": []
+	}
+}

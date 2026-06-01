@@ -1,0 +1,7 @@
+name = "funnel-test-funnel"
+main = "worker/index.ts"
+compatibility_date = "2026-06-01"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
